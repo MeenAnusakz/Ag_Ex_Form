@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-header text-white bg-primary">
+        <h2>Form</h2>
+    </div>
+    <form (submit)='onSubmit()' [formGroup]='form'>
+        <div class="card-body ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="form-group ">
+                        <label style="padding-right: 15px; " for="sex ">Sex : </label>
+                        <div class="form-check-inline ">
+                            <input type="radio" id="man " class="form-check-input" value="man" formControlName="sex">
+                            <label for="man " class="form-check-label" a> Man</label>
+
+                        </div>
+                        <div class="form-check-inline ">
+                            <input type="radio" id="woman " class="form-check-input" value="women" formControlName="sex">
+                            <label for="woman " class="form-check-label "> Women</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <label for="name ">Name : </label>
+                    <input type="text" id="name " class="form-control" formControlName="name">
+
+                </div>
+                <div class="col-md-6 ">
+                    <label for="lastname ">Lastname : </label>
+                    <input type="text" id="lastname " class="form-control " formControlName="lastname">
+                </div>
+                <div class="col-md-12 mt-2 ">
+                    <div class="form-group ">
+                        <label for="phone ">Phone number : </label>
+                        <input type="text" id="phone " class="form-control " formControlName="phone">
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="card-footer ">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <button class="btn btn-success btn-block " type="submit ">Send</button>
+                </div>
+                <div class="col-md-6 ">
+                    <button class="btn btn-warning btn-block " type="submit ">Cancal</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
